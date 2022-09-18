@@ -1,0 +1,84 @@
+header {
+    background-color: rgb(207, 69, 96);
+    height: 159px;
+    width: 100%;
+    padding: 54px;
+}
+
+.cta {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facilitators {
+    display: flex;
+    width: 50%;
+}
+
+.facilitators img {
+    margin-right: 11px;
+    width: 16px;
+    height: 16px;
+}
+
+.facilitators p {
+    font-size: 1rem;
+    color: var(--color-text);
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.6px;
+}
+
+.buttons button {
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    /* display: inline-block; */
+    cursor: pointer;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    height: 36px;
+}
+
+.buttons> :nth-child(1) {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 10px 9px;
+    width: 80px;
+}
+
+.buttons> :nth-child(2) {
+    color: #ffff;
+    background-color: var(--color-primary);
+    padding: 10px 14px;
+    width: 108px;
+    margin-left: 8px;
+}
+
+article {
+    display: flex;
+    padding: 54px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* color: var(--color-border); */
+}
+
+.left-part {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(239, 202, 132);
+}
+
+.vertical-line {
+    display: none;
+}
+
+.right-part {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(103, 166, 166);
+}
