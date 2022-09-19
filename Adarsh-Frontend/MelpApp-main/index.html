@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MelpApp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- main css file -->
+    <link href="Style/1920main.css" rel="stylesheet" />
+
+    <!-- tablet -->
+    <link rel="stylesheet" media="(max-width:768px)" href="Style/768tablet.css">
+
+    <!-- Above 1920px -->
+    <link rel="stylesheet" media="(min-width:1920px)" href="Style/over1920.css">
+
+</head>
+
+<body>
+
+
+    <div class="top">
+        <div class="header">
+            <img src="logo2.svg" alt="melpaap" />
+        </div>
+        <div class="schedule">
+            <div class="meeting_with">
+                <img src="Calendar_16X16.png" alt="meeting icon" />
+                <p>MEETING WITH HANNAH KENNEDY</p>
+            </div>
+            <div class="meeting_button">
+                <p class="button_empty">CANCEL</p>
+                <p class="button_filled">PROCEED</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="about">
+            <div class="form">
+                <form>
+                    <div class="mb-5">
+                        <label for="name" class="form-label"> MEETING TITLE</label>
+                        <input type="text" name="name" id="name" placeholder="Design Discussion" class="form-input greybg" />
+                    </div>
+                    <div class="mb-5">
+                        <label for="description" class="form-label"> DESCRIPTION </label>
+
+                        <textarea class="form-input greybg" name="description" id="phone" cols="30" rows="10">
+              </textarea>
+                    </div>
+
+                    <div class="time">
+                        <div class="mb-5 duration">
+                            <label for="email" class="form-label"> DURATION </label>
+                            <!-- <input type="email" name="email" id="email" placeholder="Enter your duration" class="form-input greybg" /> -->
+                            <select name="" id="" class="form-input greybg">
+                  <option value="">1 Hours</option>
+                  <option value="">2 Hours</option>
+                  <option value="">3 Hours</option>
+                  <option value="">4 Hours</option>
+                </select>
+                        </div>
+
+                        <div class="mb-5 timezone">
+                            <label for="email" class="form-label"> TIMEZONE </label>
+                            <select name="" id="" class="form-input greybg">
+                  <option value="">Indian Standard Time (IST +5:30)</option>
+                  <option value="">Indian Standard Time (IST +5:30)</option>
+                  <option value="">Indian Standard Time (IST +5:30)</option>
+                  <option value="">Indian Standard Time (IST +5:30)</option>
+                </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="email" class="form-label">
+                ADD INVITES<span style="color: #ee4136"> *</span></label
+              >
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter invites email or name"
+                class="form-input"
+              />
+              <img
+                src="Invite_20X20.png"
+                style="width: 20px; transform: translate(1125px, -35px)"
+                alt=""
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="notes" class="form-label">
+                POST MEETING NOTES<span style="color: #ee4136"> *</span></label
+              >
+              <textarea
+                type="text"
+                name="notes"
+                placeholder="Write something about the meeting.."
+                class="form-input"
+              ></textarea>
+            </div>
+
+            <div class="mb-5 upload-button">
+              <div class="file-upload-labels">
+                <label for="upoad" class="form-label attachment new-form-label">
+                  <span> ATTACHMENT</span>
+
+                  <span> MAX SIZE: 2MB </span>
+                </label>
+                    </div>
+
+                    <label for="inputTag" class="upload-label">
+                Upload
+                <input id="inputTag" type="file" class="upload" />
+                <img src="Fill 9.png" style="width: 15px; margin-left: 420px" />
+              </label>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="when">
+        <p>SELECT DATE<span style="color: #ee4136"> *</span></p>
+        <div class="calendar">
+            <div class="month-week">
+                <p>May/2022</p>
+            </div>
+            <div class="calendar-controller">
+                <div class="left-arrow">
+                    <img src="Stroke 16.png" alt="stroke 14" />
+                </div>
+
+                <div class="date-week">
+                    <div class="weeks">
+                        <span>SUN</span>
+                        <span>MON</span>
+                        <span>TUS</span>
+                        <span>WED</span>
+                        <span>THU</span>
+                        <span>FRI</span>
+                        <span>SAT</span>
+                    </div>
+                    <div class="days">
+                        <span id="prev-month">28</span>
+                        <span id="prev-month">29</span>
+                        <span id="prev-month">30</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                    </div>
+                    <div class="days">
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                    </div>
+                    <div class="days">
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                    </div>
+                    <div class="days">
+                        <span>19</span>
+                        <span>20</span>
+                        <span class="previous">21</span>
+                        <span class="today">22</span>
+                        <span class="upcoming">23</span>
+                        <span class="upcoming">24</span>
+                        <span>25</span>
+                    </div>
+                    <div class="days">
+                        <span>26</span>
+                        <span class="upcoming">27</span>
+                        <span class="upcoming">28</span>
+                        <span class="upcoming">29</span>
+                        <span class="upcoming">30</span>
+                        <span class="next-month upcoming">1</span>
+                        <span class="next-month">2</span>
+                    </div>
+                </div>
+
+                <div class="right-arrow">
+                    <img src="Stroke 14.png" alt="stroke 16" />
+                </div>
+            </div>
+        </div>
+        <div class="slot">
+            <p>PICK YOUR SLOT<span style="color: #ee4136"> *</span></p>
+            <div class="timings">
+                <ul>
+                    <li>
+                        9:00 - 10:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                    <li>
+                        10:00 - 11:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                    <li>
+                        11:00 - 12:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                    <li>
+                        12:00 - 01:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                    <li>
+                        12:00 - 01:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                    <li>
+                        12:00 - 01:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                    <li>
+                        12:00 - 01:00
+                        <input type="radio" name="pick" id="" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
